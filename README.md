@@ -1,6 +1,6 @@
 # TradeWire
 
-TradeWire allows you to submit an online news article and find publicly traded companies whose business operations are related to the content of the news article. TradeWire utilizes Latent Dirichlet Allocation to perform document similarity.
+TradeWire allows you to submit an online news article and find publicly traded companies whose business operations are related to the content of the news article. TradeWire utilizes Latent Dirichlet Allocation to perform document similarity. Visit the site at (http://www.tradewire.xyz). 
 
 Our dataset consists of the text portion of the 10-K filing of over 4000 companies. Currently we are supporting search on ~450 of the largest US companies. We extracted the "Business" and "Risk Factors" secitons from each 10-K. These sections provide a high level overview of the company's business operations. 
 
