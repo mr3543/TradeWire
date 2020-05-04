@@ -1,0 +1,39 @@
+body{
+    margin:0;
+    padding:0;
+    background-color:AntiqueWhite;
+    font-family:arial;
+}
+
+#about_link:link,#about_link:visited,#about_link:active,#about_link:hover{
+    text-decoration:none;
+}
+
+
+#about_div {
+    position:absolute;
+    top:10px;
+    left:10px;
+    width: 100px;
+    text-align:center;
+}
+    
+
+#container {
+    margin:300px;
+}
+
+#search_div {
+    font-family:arial;
+    text-align:center;
+}
+
+
+#search_input { 
+    height:25px;
+}
+
+#search_btn {
+    height:35px;
+}
+

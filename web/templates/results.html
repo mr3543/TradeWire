@@ -1,0 +1,28 @@
+{% extends "index.html" %}
+
+{% block search_results %}
+<div id=search_results >
+</div>
+
+<script>
+    function add_results(company_names,links) {
+        for (i = 0; i < company_names.length; i++){
+            let result_div = document.createElement("div");
+            let company_link = document.createElement("a");
+            company_link.setAttribute("href",links[i]);
+            company_link.setAttribute("class","result_link");
+            company_link.innerHTML = company_names[i].toUpperCase();
+            result_div.setAttribute("class","result_div");
+            result_div.appendChild(company_link);
+            document.getElementById("search_results").appendChild(result_div);
+        }
+    }
+
+    let company_names = {{ company_names | tojson }};
+    let links = {{ links | tojson }}; 
+    console.log("hello");
+    add_results(company_names,links);
+
+</script>
+
+{% endblock %}

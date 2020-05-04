@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+        <title>TradeWire</title>
+    </head>
+    <body>
+    <div id = "about_div">
+       <a id = "about_link" href = "{{ url_for('about') }}" >About</a> 
+    </div>
+    <div id="container">
+        <div id = "search_div">
+            <form id = "search_bar" action = "{{ url_for('get_companies') }}">
+                <h1>Search for Companies via News Articles</h1>
+                <div id = "form-box">
+                    <input id = "search_input" type="text" placeholder="Paste URL here..." name="request_url">
+                    <button id = "search_btn" class="search-btn" type="submit">Search</button>
+                </div>
+            </form>
+        </div>
+        <div id="error_msgs">
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    <ul class=flashes>
+                    {% for message in messages %}
+                        <li>{{ message }}</li>
+                    {% endfor %}
+                    </ul>
+                {% endif %}
+            {% endwith %}
+        </div>
+        {% block search_results %}
+        {% endblock %}
+    </div>
+    </body>
+</html>
+
+

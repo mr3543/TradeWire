@@ -1,0 +1,11 @@
+body {
+    margin:0;
+    background-color:AntiqueWhite;
+    padding:0;
+}
+
+#main_text {
+    font-family:arial;
+    margin:25%;
+}
+
