@@ -13,7 +13,7 @@ Submitting the article https://www.cnn.com/2020/05/03/health/coronavirus-vaccine
 3. alxn: Alexion, pharmaceutical company
 ...
 
-Submitting https://www.cnn.com/2020/05/03/success/landlords-rent-may-coronavirus/index.html, an article about landlords and rentals returns
+Submitting https://www.cnn.com/2020/05/03/success/landlords-rent-may-coronavirus/index.html, an article about landlords and housing rentals returns
 
 1. amt: American Tower Corp, real estate investment trust
 2. cci: Crown Castle International, real estate investment trust
